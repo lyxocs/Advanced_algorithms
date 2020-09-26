@@ -1,0 +1,9 @@
+% Exercise 2-1
+n = 1000 %试验次数
+for i = 1:n
+    jobs = ceil(rand(1,10) * 10); %在1-10范围内随机生成10个jobs
+    sort(jobs,'desend');
+    
+    %Optimal solution
+    
+    
