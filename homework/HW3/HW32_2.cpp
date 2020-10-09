@@ -17,18 +17,19 @@ void dfs(int m,int n,vector<int> vec)
 }
 int main()
 {
-    int m = 3,n = 9;
+    int m = 3,n = 10;
+    int start = 4;
     vector<int> vec;
     dfs(m,n,vec);
     vector<vector<int> > jobs;
-    for(int i = 1; i <= n; i++)
+    for(int i = start; i <= n; i++)
     {
         vec.push_back(2 * i);
     }
     jobs.push_back(vec);
     jobs.push_back(vec);
     vec.clear();
-    for(int i = 1; i <= n; i++)
+    for(int i = start; i <= n; i++)
     {
         vec.push_back(i);
     }

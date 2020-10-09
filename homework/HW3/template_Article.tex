@@ -1,0 +1,35 @@
+\documentclass[]{article}
+
+%opening
+\title{}
+\author{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+self-introduction
+My name is Liu Yuxi, and I come from institute of furture networks, My advisor is Wang Yi.
+\end{abstract}
+
+\section{Exercise2-1}
+In the first Exercise, I give three machines and seven jobs with the execution time is 5,5,4,4,3,3,3
+In the optimal condition, the machine one doing job1,job3, the machine 2 doing job2 and job4, the machine 3 doing job 5 6 7. Every machines' execution time is 9, and the T* is 9.\\
+But if we use the sort greedy algorithm, the distribution result is shown in the figure below. The execution of machine 1 is 11, and other machines' execution time is 9, So the T max is 11. The ratio is 1.22, a little closer that three of four.
+\section{Exercise2-2}
+In the second exercise, we proposed the Sorted Posterior Greedy Algorithm(SPGA),the algorithm is shown as follow:
+First, We should define the weights of different machines. In this case, we used equal weights,all equal to one third, and then sort them by weight.\\
+Second, we inserted jobs one by one. Each time, we first calculate the completion time after inserting the job into each machine, and then we select the machine with the earliest completion time and insert the job.\\
+After sort, the job order is 10,9,8,...,1, first we insert $job_{10}$ into machine 3,which the completion time is 10 less than other machine whose completion time is 20.Next step, we insert $job_9$ into machine 1, which completion time is 18 no more than machine2-18 machine 3-19,
+and then job8 to machine2
+job7 to machine3
+job6 to machine 3
+job5 to machine 2
+job4 to machine 1
+job3 to machine 3
+job2 to machine 3
+job1 to machine 1
+
+
+\end{document}
