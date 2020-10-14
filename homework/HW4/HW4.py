@@ -68,6 +68,6 @@ cv.bind("<Button-3>", paint2)
 # <Triple-Button-1>：三击事件
 
 # message = Label(root, text = "press and drag the mouse to tap")
-message.pack(side = BOTTOM)
+# message.pack(side = BOTTOM)
 
 root.mainloop()
