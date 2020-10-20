@@ -68,9 +68,20 @@ def paint3(event):
     x2, y2 = (x*gaird_width + 20), (y*gaird_width + 20)
     cv.create_oval(x1,y1,x2,y2, fill = python_green)
 
+def paint4(event):
+    python_green = "yellow"
+    x: int = int((event.x + 0.5 * gaird_width - 10)/gaird_width)
+    y: int = int((event.y + 0.5 * gaird_width - 10)/gaird_width)
+    print(x,y)
+    x1, y1 = (x*gaird_width ), (y*gaird_width)
+    x2, y2 = (x*gaird_width + 20), (y*gaird_width + 20)
+    cv.create_oval(x1,y1,x2,y2, fill = python_green)
+
+
 cv.bind("<Button-1>", paint)
 cv.bind("<Button-3>", paint2)
 cv.bind("<Double-Button-1>", paint3)
+cv.bind("<Button-2>",paint4)
 # <Button-1>：鼠标左击事件
 # <Button-2>：鼠标中击事件
 # <Button-3>：鼠标右击事件
